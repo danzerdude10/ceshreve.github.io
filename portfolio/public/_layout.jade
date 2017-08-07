@@ -1,0 +1,19 @@
+doctype
+html
+	head
+		link(rel="stylesheet" href="/css/main.css")
+		link(rel="shortcut icon" href="favicon.ico")
+		title= sitename
+	body
+		header
+			nav.nav.nav-pills
+				a(href="/")
+					img(src="/static/initials.svg").logoimg
+				li 
+					a(href="/professional") Professional
+				li 
+					a(href="/personal") Personal 				
+				li 
+					a(href="/contact") Contact
+		section
+			!= yield
