@@ -1,6 +1,7 @@
 doctype
 html
 	head
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
 		link(rel="stylesheet" href="/css/main.css")
 		link(rel="shortcut icon" href="favicon.ico")
 		title= sitename
@@ -17,8 +18,22 @@ html
 					a(href="/contact") Contact
 		section
 			!= yield
-		footer
-			nav
+		footer.footer
+			nav.nav.nav-pills
 				li
-					i.fa.fa-github
-					a(href="#") Github
+					a(href="https://github.com/ceshreve")
+						i.fa.fa-github
+				li
+					a(href="https://twitter.com/littlechrob")
+						i.fa.fa-twitter
+				li
+					a(href="https://www.linkedin.com/in/charlotteshreve/")
+						i.fa.fa-linkedin
+				li
+					a(href="https://codepen.io/ceshreve/")
+						i.fa.fa-codepen
+				li
+					a(href="MAILTO:shrevecharlotte@gmail.com")
+						i.fa.fa-envelope
+	
+	script(src="https://use.fontawesome.com/644e505f78.js")
